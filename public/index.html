@@ -1,33 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Huddle landing page with single introductory section</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>
+      Frontend Mentor | Huddle landing page with single introductory section
+    </title>
 
-  Build The Community Your Fans Will Love
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <svg class="header__logo">
+        <use xlink:href="images/sprite.svg#logo-huddle"></use>
+      </svg>
+    </header>
 
-  Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
-  Create connections with your users as you engage in genuine discussion. 
+    <section class="hero">
+      <img
+        src="images/illustration-mockups.svg"
+        alt="An illustration of mockups"
+        class="hero__image"
+      />
+      <h1 class="hero__heading">Build The Community Your Fans Will Love</h1>
 
-  Register
+      <p class="hero__copy">
+        Huddle re-imagines the way we build communities. You have a voice, but
+        so does your audience. Create connections with your users as you engage
+        in genuine discussion.
+      </p>
 
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+      <a href="#" class="btn">Register</a>
+    </section>
+
+    <div class="social-links">
+      <a href="#" class="social-link">
+        <svg class="social-link__icon">
+          <use xlink:href="images/sprite.svg#icon-facebook"></use>
+        </svg>
+      </a>
+
+      <a href="#" class="social-link">
+        <svg class="social-link__icon">
+          <use xlink:href="images/sprite.svg#icon-twitter"></use>
+        </svg>
+      </a>
+
+      <a href="#" class="social-link">
+        <svg class="social-link__icon">
+          <use xlink:href="images/sprite.svg#icon-instagram"></use>
+        </svg>
+      </a>
+    </div>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Dale Carpenter</a>.
+      </p>
+    </footer>
+  </body>
 </html>
