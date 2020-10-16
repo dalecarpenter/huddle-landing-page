@@ -11,5 +11,13 @@ html {
 }
 
 body {
-  background-color: #cecece;
+  background-color: $color-primary;
+  background-image: url('../images/bg-mobile.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+  @include bp-large {
+    background-image: url('../images/bg-desktop.svg');
+    background-size: auto 100%;
+  }
 }

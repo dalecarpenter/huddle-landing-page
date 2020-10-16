@@ -1,1 +1,30 @@
+.social-link {
+  display: inline-flex;
+  justify-content: center;
+  width: 2.8rem;
+  height: 2.8rem;
+  border: 0.08rem solid $color-white;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
 
+  &__icon {
+    width: 47.5%;
+    fill: $color-white;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover {
+    background-color: $color-white;
+
+    & > * {
+      fill: $color-primary;
+    }
+  }
+
+  @include bp-large {
+    width: 4rem;
+    height: 4rem;
+    border: 0.117647rem solid $color-white;
+  }
+}

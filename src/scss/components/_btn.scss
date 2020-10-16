@@ -1,0 +1,40 @@
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+
+  font-family: $font-heading;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: $color-primary;
+
+  background-color: $color-white;
+  width: 20rem;
+  height: 4rem;
+  border-radius: 2rem;
+  box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transform: translateY(-0.2rem);
+    box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.4);
+
+    @include bp-large {
+      box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  &:active {
+    transform: translateY(0.2rem);
+    box-shadow: 0 0.3rem 0.25rem rgba(0, 0, 0, 0.4);
+  }
+
+  @include bp-large {
+    align-self: flex-start;
+    font-size: 1.8rem;
+    height: 5.6rem;
+    border-radius: 2.7rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+  }
+}

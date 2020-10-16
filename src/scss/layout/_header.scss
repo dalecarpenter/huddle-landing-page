@@ -1,0 +1,12 @@
+.header {
+  &__logo {
+    display: block;
+    margin: 3.82rem 0 0 4rem;
+    width: 32%;
+    max-width: 20rem;
+
+    @include bp-large {
+      margin: 6.4rem 0 0 8rem;
+    }
+  }
+}

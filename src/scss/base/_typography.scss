@@ -3,4 +3,10 @@ body {
   font-size: 1.6rem;
   line-height: 1.5;
   color: $color-white;
+  text-align: center;
+
+  @include bp-large {
+    font-size: 1.8rem;
+    text-align: left;
+  }
 }
